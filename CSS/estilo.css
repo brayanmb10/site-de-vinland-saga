@@ -30,7 +30,7 @@
     nav ul li a {color: #fff;
     text-decoration: none;}
     
-    a:hover {background-color: #ffffff;}
+    a:hover {background-color: #0d17e1;}
     
     header .container {display: flex;
     justify-content: space-between;
@@ -42,10 +42,11 @@
     
 
 .banner{
-    background: url(../Downloads/banner.png) no-repeat center
+    background:url(../Downloads/banner.png) no-repeat center/cover
+     height: 400px; 
+
+    
 }
-
-
 
 
     @media (max-width: 675px){
