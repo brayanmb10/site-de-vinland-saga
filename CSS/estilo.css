@@ -40,6 +40,14 @@
     .logo {font-size: 2em;
     font-weight: bold;}
     
+
+.banner{
+    background: url(../Downloads/banner.png) no-repeat center
+}
+
+
+
+
     @media (max-width: 675px){
         header .container {flex-direction: column;
         text-align: center;}
