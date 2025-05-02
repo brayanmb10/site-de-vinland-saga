@@ -40,13 +40,31 @@
     .logo {font-size: 2em;
     font-weight: bold;}
     
+        #inicio{margin-top: 200px;}
 
 .banner{
-    background:url(../Downloads/banner.png) no-repeat center/cover
+    background:url(url(../OneDrive/Área de Trabalho/siteVinland/banner.png) no-repeat center/cover)
+    display=flex
      height: 400px; 
+     align-items: center;
+justify-content: center;
+color: #ffffff;
+font-size: larger;
+text-align: justify;
+}
+
+a:hover {background-color: #0606a0;}
+
+header .container {display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;}
+
+.logo {font-size: 2em;
+font-weight: bold;}
 
     
-}
+
 
 
     @media (max-width: 675px){
