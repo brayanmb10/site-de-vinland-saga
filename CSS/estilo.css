@@ -1,75 +1,151 @@
-*{margin: 0;
+
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;}
-    
-    .container {max-width: 1200px;
-    margin: auto;
-    padding: 20px;}
-    
-    body {background-color: #618f98;}
-    
-    header {background-color: #011a4b;
-    color: #fff;
-    padding: 15px 15px 15px 15px;
-    width: 100%;
-    top: 0%;
-    position: fixed;
-    z-index: 1000%;}
-    
-    section {color: #fff;}
-
-    nav ul {list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;}
-    
-    nav ul li {margin-left: 20px;}
-    
-    nav ul li a {color: #fff;
-    text-decoration: none;}
-    
-    a:hover {background-color: #0d17e1;}
-    
-    header .container {display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;}
-    
-    .logo {font-size: 2em;
-    font-weight: bold;}
-    
-        #inicio{margin-top: 200px;}
-
-.banner{
-    background:url(url(../OneDrive/Área de Trabalho/siteVinland/banner.png) no-repeat center/cover)
-    display=flex
-     height: 400px; 
-     align-items: center;
-justify-content: center;
-color: #ffffff;
-font-size: larger;
-text-align: justify;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
 }
 
-a:hover {background-color: #0606a0;}
-
-header .container {display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: wrap;}
-
-.logo {font-size: 2em;
-font-weight: bold;}
-
-    
+body {
+    background-color: #f4f4f4;
+}
 
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
 
-    @media (max-width: 675px){
-        header .container {flex-direction: column;
-        text-align: center;}
-        nav ul {margin-top: 10px;
-        flex-direction: column;}
+
+header {
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+
+.banner {
+    padding: 100px 20px;
+    background: url("../Downloads/banner.png")center/cover
+    text-align center;
+    color: #fff;
+}
+
+
+.sobre-container {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.hex-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.hex {
+    background-color: #eee;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+section {
+    padding: 60px 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+
+@media (max-width: 675px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
     }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hex-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
