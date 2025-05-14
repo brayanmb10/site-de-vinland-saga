@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -20,7 +20,7 @@ body {
 
 
 header {
-    background-color: #222;
+    background-color: #333;
     color: #fff;
     position: fixed;
     width: 100%;
@@ -37,9 +37,8 @@ header .container {
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
-    letter-spacing: 2px;
 }
 
 nav ul {
@@ -64,8 +63,8 @@ nav ul li a:hover {
 
 .banner {
     padding: 100px 20px;
-    background: url("../Downloads/banner.png")center/cover
-    text-align center;
+    background: url('banner\ vinland\ saga.jpg') no-repeat center center/cover;
+    text-align: center;
     color: #fff;
 }
 
