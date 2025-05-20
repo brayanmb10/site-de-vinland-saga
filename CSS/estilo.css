@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #3306d8;
+    background-color: #f4f4f4;
 }
 
 
@@ -20,8 +20,8 @@ body {
 
 
 header {
-    background-color: #0554ca;
-    color: #0554ca;
+    background-color: #333;
+    color: #fff;
     position: fixed;
     width: 100%;
     top: 0;
@@ -44,6 +44,8 @@ header .container {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
@@ -65,7 +67,7 @@ nav ul li a:hover {
     padding: 100px 20px;
     background: url('banner\ vinland\ saga.jpg') no-repeat center center/cover;
     text-align: center;
-    color: #992525a1;
+    color: #fff;
 }
 
 
