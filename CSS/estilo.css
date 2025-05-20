@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #1a8cea;
+    background-color: #e7cccc;
 }
 
 
@@ -19,8 +19,8 @@ body {
 }
 
 header {
-    background-color: #0e82e1;
-    color: #106dcb;
+    background-color: #e7cccc;
+    color: #e7cccc;
     position: fixed;
     width: 100%;
     top: 0;
