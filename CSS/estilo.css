@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #4211d7;
+    background-color: #1a8cea;
 }
 
 
@@ -18,10 +18,9 @@ body {
     padding: 20px;
 }
 
-
 header {
-    background-color: #2a0dcb;
-    color: #0e0bb9;
+    background-color: #0e82e1;
+    color: #106dcb;
     position: fixed;
     width: 100%;
     top: 0;
@@ -67,7 +66,7 @@ nav ul li a:hover {
     padding: 100px 20px;
     background:url("banner.png") no-repeat center center/cover;
     text-align: center;
-    color: #fff;
+    color: #7f86879d;
 }
 
 
