@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #e7cccc;
+    background-color: #000000;
 }
 
 
@@ -53,7 +53,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #2511d6;
+    color: #8c88ae;
     transition: color 0.3s;
 }
 
