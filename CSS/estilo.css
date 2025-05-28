@@ -67,6 +67,14 @@ nav ul li a:hover {
     background:url("banner.png") no-repeat center center/cover;
     text-align: center;
     color: #7f86879d;
+    display: flex;
+    height: 400px;
+    margin-top: 90px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+    text-shadow: 2px 2px 5px #ccc
 }
 
 
