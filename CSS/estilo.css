@@ -265,6 +265,8 @@ section{
     text-decoration: none;
   }
 
+#aplicacoes{margin: 20px;}
+
   .centralizah1{
     text-align: center;
 }
@@ -272,6 +274,31 @@ section{
 .centralizah3{
     text-align: center;
 }
+
+
+.galeriagrid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    flex: 1;
+}
+
+.Galeria{
+    width: 470px;
+    height: 420px;
+    overflow: hidden;
+    background-color: #dfe4e7;
+    position: relative;
+    padding: 7px;
+    box-shadow: 0 5px 20px #000000;
+}
+
+.Galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
 
 @media (max-width:675px){
     header .container, .sobre-container{
