@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: #f4f8fa;
+    background-image: linear-gradient(white, gray);
 }
 
 header{
@@ -73,7 +73,6 @@ section{
 
 #sobre{
     padding: 35px;
-    background-color: #f4f8fa;
     color: #4d3f72 ;
 }
 
@@ -154,11 +153,11 @@ section{
 }
 
 #acao .item {
-    background-color: white; 
-    border: 1px solid #ddd; 
-    border-radius: 10px;
+    background-color: rgb(168, 168, 168); 
+    border: 1px solid rgb(163, 162, 162); 
+    
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 7px #000000; 
     transition: transform 0.2s ease, box-shadow 0.2s ease; 
   
     cursor: pointer; 
@@ -177,7 +176,7 @@ section{
 #acao .item p {
     margin-top: 15px; 
     font-size: 1.2em; 
-    color: #4d3f72; 
+    color: #ffffff; 
 }
 
 #acao .imagem img {
@@ -269,10 +268,15 @@ section{
 
   .centralizah1{
     text-align: center;
+    font-size: 4.5em;
+    color: rgb(241, 241, 241);
 }
 
 .centralizah3{
     text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: white;
 }
 
 
@@ -288,7 +292,7 @@ section{
     width: 470px;
     height: 420px;
     overflow: hidden;
-    background-color: #dfe4e7;
+    background-color: gray;
     position: relative;
     padding: 7px;
     box-shadow: 0 5px 20px #000000;
