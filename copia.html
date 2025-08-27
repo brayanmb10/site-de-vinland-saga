@@ -54,7 +54,7 @@
 
 
                               <div class="grup-form">
-                                <label for="idade">Digite a sua idade?</label>
+                                <label for="idade">Digite a sua idade</label>
                                 <input type="number" id="idade" name="idade" min="1" max="120">
                             </div>
 
@@ -76,8 +76,8 @@
                                 <label for="temp1">temporada 1</label><br>
                                 <input type="radio" id="season2" name="fav_temp" value="temp">
                                 <label for="temp2">temporada 2</label><br>
-                                <input type="radio" id="season3" name="fav_temp" value="temp">
-                                <label for="temp2">Temporada 3</label>
+                                <input type="radio" id="dw" name="fav_temp" value="temp">
+                                <label for="temp2">não tenho conhecimento ou não assisti.</label>
                         
                                 <p>Digite seu E-mail</p>
                                 <div class="grup-form">
@@ -95,10 +95,21 @@
                       <input type="date" id="data" name="data">
                     </div>
 
-                    <div class="grupo-form">
+                    <div class="grup-form">
                       <label for="cor">Escolha sua cor preferida:</label>
                       <input type="color" id="cor" name="cor">
                     </div>
+
+                    <div class="grup-form">
+                        <label for="mensagem">Deixe opiniões, faça perguntas ou envie uma mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                    </div>
+
+                    <div class="grupo-form">
+                        <button type="submit" class="btn">Enviar</button>
+                        <input type="hidden" name="_captcha" value="false"> 
+                        <input type="hidden" name="_next" value="https://brayanmb10.github.io//site-de-vinland-saga/enviado.html">       
+                                                
 
                         </div>               
                     </div>
