@@ -1,0 +1,378 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 20px; 
+}
+
+body{
+    background-image: linear-gradient(white, gray);
+}
+
+header{
+    background-color: #4a4a4a ;
+    color: #ebebeb;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1000 ;
+
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li{
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+nav ul li a{
+    color: #ebebeb;
+    text-decoration: none;    
+}
+
+.banner{
+    background:url(../IMG/banner.png) no-repeat center/cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px; 
+    color: #aeaeae;
+    font-size: 1.3em;
+    text-align:left;
+}
+
+section{
+    scroll-margin-top: 100px;
+}
+
+#sobre{
+    padding: 35px;
+    color: #4d3f72 ;
+}
+
+.sobre-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.sobre-texto{
+    flex: 1;
+    padding: 20px;
+
+}
+
+.sobre-texto h1{
+ font-size: 1.7;
+ margin-bottom: 20px;
+}
+
+.sobre-texto p{
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 10px;
+   }
+
+.sobre-texto h2{
+    margin-top: 15px;
+
+ }
+
+.sobre-texto a{
+    color: #4d3f72;
+    text-decoration: none;
+}
+
+.fonte{
+    font-size:1em;
+ }
+
+.hex-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    flex: 1;
+}
+
+.hex{
+    width: 140px;
+    height: 120px;
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    overflow: hidden;
+    background-color: #ccc;
+    position: relative;
+}
+
+.hex img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
+
+.text-acao{
+    text-align: center;
+}
+
+#acao .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    text-align: center; 
+    padding: 50px 0; 
+}
+
+#acao .item {
+    background-color: rgb(168, 168, 168); 
+    border: 1px solid rgb(163, 162, 162); 
+    
+    padding: 20px;
+    box-shadow: 0 4px 7px #000000; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+  
+    cursor: pointer; 
+}
+
+#acao .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+#acao .item:active {
+    transform: scale(0.98); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#acao .item p {
+    margin-top: 15px; 
+    font-size: 1.2em; 
+    color: #ffffff; 
+}
+
+#acao .imagem img {
+    width: 100%; 
+    max-width: 150px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: auto;    
+    text-align: justify;    
+  } 
+
+  .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #4d3f72;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+
+  .modal {
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal:target {
+    display: flex;
+  }
+
+.modal-content {
+    max-height: 90vh;
+    overflow-y: auto; 
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: justify;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal-content h4{
+    margin-top: 2%;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+   
+  }
+
+  .listacard{
+    margin-top: 1%;
+    margin-left: 10%;
+  }
+
+  .modal-content h3{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.4rem;
+  }
+
+  .close-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    background: #dc3545;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+
+#aplicacoes{margin: 20px;}
+
+  .centralizah1{
+    text-align: center;
+    font-size: 4.5em;
+    color: rgb(241, 241, 241);
+}
+
+.centralizah3{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: white;
+}
+
+
+.galeriagrid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    flex: 1;
+}
+
+.Galeria{
+    width: 470px;
+    height: 420px;
+    overflow: hidden;
+    background-color: gray;
+    position: relative;
+    padding: 7px;
+    box-shadow: 0 5px 20px #000000;
+}
+
+.Galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
+
+.formulario{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: auto;
+    margin: top 30px;
+    margin-bottom: 15px;
+    color: #000000;
+} 
+
+.grup-form{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+   font-size: 1.2em;
+}
+
+.grup-form input, .grup-form select, .grup-form textarea{
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 12px;
+    font-size: 1em;
+    margin-top: 6px;
+}
+
+.grup-form input[type="checkbox"],.grup-form input[type="radio"]{
+    margin-right: 8px;
+    margin-top: 0;
+}
+
+.grup-form label{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #1c1a1a;
+}
+
+.grup-form button{
+    color: #000000;
+}
+
+input[type="range"]{
+    accent-color: #3a2362;
+}
+
+
+@media (max-width:675px){
+    header .container, .sobre-container{
+        flex-direction: column;
+        text-align: center;        
+    }
+
+    nav ul{
+        margin-top: 10px;
+        flex-direction: column;        
+    }
+    
+    .banner{
+        margin-top: 160px;
+    }
+    section{
+        scroll-margin-top: 200px;
+    }
+
+    .modal{
+        margin-top: 100px;
+    } 
+    
+    .modal-content{
+        max-height: 60vh;
+    } 
+}
