@@ -304,6 +304,52 @@ section{
     object-fit: cover;
 }  
 
+.formulario{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: auto;
+    margin: top 30px;
+    margin-bottom: 15px;
+    color: #000000;
+} 
+
+.grup-form{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+   font-size: 1.2em;
+}
+
+.grup-form input, .grup-form select, .grup-form textarea{
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 12px;
+    font-size: 1em;
+    margin-top: 6px;
+}
+
+.grup-form input[type="checkbox"],.grup-form input[type="radio"]{
+    margin-right: 8px;
+    margin-top: 0;
+}
+
+.grup-form label{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #1c1a1a;
+}
+
+.grup-form button{
+    color: #000000;
+}
+
+input[type="range"]{
+    accent-color: #3a2362;
+}
+
+
 @media (max-width:675px){
     header .container, .sobre-container{
         flex-direction: column;
